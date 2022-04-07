@@ -316,7 +316,7 @@ content-background = ${color.background}
 [module/sep]
 type = custom/text
 content = |
-content-foreground = ${color.altblack}
+content-foreground = ${color.teal}
 content-padding = 1
 
 [module/powermenu]
