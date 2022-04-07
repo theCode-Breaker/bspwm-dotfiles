@@ -5,9 +5,7 @@ content-background = ${color.background}
 
 [module/sep]
 type = custom/text
-;content = 
-content = ""
-
+content = 
 content-font = 3
 content-background = ${color.background}
 content-foreground = ${color.altblack}
