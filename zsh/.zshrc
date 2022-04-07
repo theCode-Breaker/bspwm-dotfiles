@@ -57,7 +57,7 @@ _comp_options+=(globdots) # lets you tab complete hidden files by default
 plugins=(git npm vi-mode zsh-autosuggestions zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-[[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
+[[ -f ~/.zshrc-alias ]] && . ~/.zshrc-alias
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
 fm6000 -r -n -c random
