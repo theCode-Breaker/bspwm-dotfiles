@@ -1,14 +1,18 @@
 [color]
-background = #cc1A1826
+background = #aa1A1826
 foreground = #F5E0DC
-black = #161320
-red = #F28FAD
+flamingo = #F2CDCD
+mauve = #DDB6F2
+pink = #F5C2E7
 maroon = #E8A2AF
-green = #ABE9B3
+red = #F28FAD
+peach = #F8BD96
 yellow = #FAE3B0
+green = #ABE9B3
+teal = #B5E8E0
 blue = #96CDFB
 sky = #89DCEB
-mauve = #DDB6F2
-teal = #B5E8E0
+lavender = #C9CBFF
 white = #D9E0EE
-altblack = #302D41
+black = #161320
+altblack = #1E1E2E

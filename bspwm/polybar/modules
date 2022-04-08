@@ -164,7 +164,7 @@ label-empty-padding = 1
 ; Separator in between workspaces
 label-separator = ":"
 label-separator-padding = 0
-label-separator-foreground = ${color.altblack} 
+label-separator-foreground = ${color.foreground} 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -172,7 +172,7 @@ label-separator-foreground = ${color.altblack}
 type = internal/bspwm
 
 format = <label-mode>
-format-foreground = ${color.mauve}
+format-foreground = ${color.flamingo}
 format-padding = 1
 format-font = 2
 
@@ -194,8 +194,8 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-padding = 0
-format-prefix-foreground = ${color.green}
-format-foreground = ${color.green}
+format-prefix-foreground = ${color.peach}
+format-foreground = ${color.peach}
 label = "%{A1:terminal -e gtop &:}%percentage%% %{A}"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
@@ -224,15 +224,15 @@ fixed-values = true
 
 format-mounted = <label-mounted>
 format-mounted-prefix = " "
-format-mounted-prefix-foreground = ${color.teal}
+format-mounted-prefix-foreground = ${color.pink}
 
 format-unmounted = <label-unmounted>
 format-unmounted-prefix = " "
-format-unmounted-prefix-foreground = ${color.teal}
+format-unmounted-prefix-foreground = ${color.pink}
 
 label-mounted = "%{A1:terminal -e ncdu &:} %free%%{A}"
 label-unmounted = " %mountpoint%: NA"
-label-mounted-foreground = ${color.teal}
+label-mounted-foreground = ${color.pink}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -297,14 +297,36 @@ ramp-signal-font = 2
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+[module/title]
+type = internal/xwindow
+
+format = <label>
+format-foreground = ${color.foreground}
+format-underline = ${color.foreground}
+
+label = %title%
+label-maxlen = 30
+
+label-empty = bspwm
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/my-text-label]
+type = custom/text
+content = bspwm
+content-foreground = ${color.foreground}
+content-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
 [module/installed-pkgs]
 type = custom/script
 exec = pacman -Q | wc -l
 interval = 10
 label = %output%
-format-foreground = ${color.green}
+format-foreground = ${color.lavender}
 format-prefix = " "
-format-prefix-foreground = ${color.green}
+format-prefix-foreground = ${color.lavender}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
