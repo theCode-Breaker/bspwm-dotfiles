@@ -206,7 +206,7 @@ interval = 1
 format-margin = 0
 time = "%A, %d/%m/%y, %I:%M %p"
 
-format-prefix = 
+format-prefix = 
 format-prefix-foreground = ${color.blue}
 
 label = %time%
