@@ -53,7 +53,7 @@ font-4 = "Source Code Pro Bold:size=13;3"
 # Default
 modules-left= launcher sep cpu memory filesystem sep installed-pkgs
 modules-center = bspwm sep mod
-modules-right = network sep battery sep volume sep brightness sep time sep powermenu
+modules-right = network sep battery volume brightness sep time powermenu
 
 spacing = 0
 dim-value = 1.0
