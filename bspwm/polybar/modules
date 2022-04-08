@@ -367,6 +367,5 @@ label-open = 
 label-open-foreground = ${color.red}
 label-open-padding = 1
 label-close = 
-label-close-font = 3
 label-close-foreground = ${color.red}
 label-close-padding = 1
