@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# Restore wallpaper
+# wallpaper
 feh --no-fehbg --randomize --bg-scale $HOME/.config/bspwm/backgrounds/*
 
 pgrep -x sxhkd > /dev/null || sxhkd &
