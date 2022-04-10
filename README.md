@@ -1,6 +1,4 @@
 # bspwm-dotfiles
-
-* get [dmenu](https://github.com/axyl-os/axyl-dmenu) 
 ``` 
 wget https://raw.githubusercontent.com/theCode-Breaker/bspwm-dotfiles/main/bspwm.sh 
 bash bspwm.sh
