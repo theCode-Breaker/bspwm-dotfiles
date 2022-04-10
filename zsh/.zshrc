@@ -41,8 +41,8 @@ RPROMPT='%F{060}${vcs_info_msg_0_}`git_prompt_status`'
 #ZSH_THEME_RANDOM_CANDIDATES=( "agnoster" "crunch" "fino-time" "funky" "jonathan" "junkfood" )
 
 source $ZSH/oh-my-zsh.sh
-export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/nvim
+export EDITOR=/usr/bin/nano
+export VISUAL=/usr/bin/nano
 export _JAVA_AWT_WM_NONREPARENTING=1
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
@@ -60,4 +60,4 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -f ~/.zshrc-alias ]] && . ~/.zshrc-alias
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
-fm6000 -r -n -c random
+neofetch
