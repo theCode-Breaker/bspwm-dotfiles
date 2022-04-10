@@ -22,10 +22,6 @@ super + {x,n,d,s}
 ctrl + alt + l
     lock
 
-# custom dmenu scripts
-alt + {e,l}
-    {edit-configs, quick-links}
-
 # Launch Applications
 super + shift + {f,w,r,g,c,d,s,v}
     {thunar,vivaldi-stable,alacritty -e ranger,geany,code,discord,spotify,virtualbox}
