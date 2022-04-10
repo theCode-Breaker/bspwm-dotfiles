@@ -196,7 +196,7 @@ format-prefix = " "
 format-padding = 0
 format-prefix-foreground = ${color.peach}
 format-foreground = ${color.peach}
-label = "%{A1:terminal -e gtop &:}%percentage%% %{A}"
+label = "%{A1:alacritty -e gtop &:}%percentage%% %{A}"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -230,7 +230,7 @@ format-unmounted = <label-unmounted>
 format-unmounted-prefix = " "
 format-unmounted-prefix-foreground = ${color.pink}
 
-label-mounted = "%{A1:terminal -e ncdu &:} %free%%{A}"
+label-mounted = "%{A1:alacritty -e ncdu &:} %free%%{A}"
 label-unmounted = " %mountpoint%: NA"
 label-mounted-foreground = ${color.pink}
 
@@ -245,7 +245,7 @@ format = <label>
 format-prefix = " "
 format-prefix-foreground = ${color.yellow}
 format-foreground = ${color.yellow}
-label = "%{A1:terminal -e htop &:} %mb_used% %{A}"
+label = "%{A1:alacritty -e htop &:} %mb_used% %{A}"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -255,7 +255,7 @@ content = 
 content-font = 4
 content-foreground= ${color.blue}
 content-padding = 1
-click-left=def-dmenu
+click-left=rofi -show drun
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -281,8 +281,6 @@ format-disconnected = <label-disconnected>
 format-disconnected-prefix = " 睊 "
 format-disconnected-prefix-font = 2
 format-disconnected-foreground = ${color.green}
-label-connected = "%{A1:def-nmdmenu &:}%essid%%{A}"
-label-disconnected = "%{A1:def-nmdmenu &:}Offline%{A}"
 
 label-connected-foreground = ${color.green}
 label-disconnected-foreground = ${color.green}
