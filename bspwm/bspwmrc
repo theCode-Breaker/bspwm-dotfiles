@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# wallpaper
+# Restore wallpaper
 feh --no-fehbg --randomize --bg-scale $HOME/.config/bspwm/backgrounds/*
 
 pgrep -x sxhkd > /dev/null || sxhkd &
@@ -63,4 +63,4 @@ xfce4-power-manager &
 
 # start compositor
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
-picom --config $HOME/.config/bspwm/picom.conf &
+picom --experimental-backends --config $HOME/.config/bspwm/picom.conf &
