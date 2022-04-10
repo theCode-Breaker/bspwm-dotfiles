@@ -9,14 +9,14 @@ super + Escape
 # Launch Terminal
 super + Return
     alacritty
-
-# j4 dmenu
+    
+#App Launcher
 alt + F1
-    j4-dmenu
-
+    rofi -show drun
+	
 # Launch Menus
-super + {x,n,d,s}
-    {powermenu,def-nmdmenu,def-dmenu,def-ssdmenu}
+super + {d,w,x}
+    {rofi -show run,rofi -show window,powermenu}
 
 # Lock Screen
 ctrl + alt + l
@@ -36,15 +36,7 @@ XF86MonBrightness{Up,Down}
 
 # screenshot
 Print
-    takeshot --now
-
-# screenshot active window
-ctrl + Print
-    takeshot --win
-
-# screenshot selected area
-ctrl + shift + Print
-    takeshot --area
+    flameshot launcher
 
 #
 #
