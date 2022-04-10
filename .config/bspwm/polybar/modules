@@ -281,6 +281,8 @@ format-disconnected = <label-disconnected>
 format-disconnected-prefix = " 睊 "
 format-disconnected-prefix-font = 2
 format-disconnected-foreground = ${color.green}
+label-connected = %essid%
+label-disconnected = Offline
 
 label-connected-foreground = ${color.green}
 label-disconnected-foreground = ${color.green}
@@ -342,30 +344,8 @@ content-foreground = ${color.teal}
 content-padding = 1
 
 [module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-menu-0-0 = " Reboot |"
-menu-0-0-exec = menu-open-1
-menu-0-1 = " Shutdown "
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = " Back |"
-menu-1-0-exec = menu-open-0
-menu-1-1 = " Reboot "
-menu-1-1-exec = systemctl reboot
-
-menu-2-0 = " Shutdown |"
-menu-2-0-exec = systemctl poweroff
-menu-2-1 = " Back "
-menu-2-1-exec = menu-open-0
-
-format = <label-toggle><menu>
-
-label-open = 
-label-open-foreground = ${color.red}
-label-open-padding = 1
-label-close = 
-label-close-foreground = ${color.red}
-label-close-padding = 1
+type = custom/text
+content = 
+content-foreground = ${color.red}
+content-padding = 1
+click-left = powermenu
