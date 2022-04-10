@@ -140,7 +140,7 @@ class = Dunst
 icon_position = left
 max_icon_size = 48
 
-frame_width = 2
+frame_width = 0
 
 [shortcuts]
 
@@ -180,7 +180,6 @@ frame_color = "#F8BD96"
 foreground = "#D9E0EE"
 background = "#1E1E2E"
 timeout = 5
-
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
