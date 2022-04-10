@@ -1,39 +1,34 @@
-#!/bin/bash
-# shellcheck disable=SC2086
+#!/bin/sh
 
-## Get colors -----------------
-source colors
-
-FG="$fg"
-BG="$bg"
-
+FG="#F5E0DC"
+BG="#1A1826"
 BLACK="#161320"
 RED="#F28FAD"
 GREEN="#ABE9B3"
 YELLOW="#FAE3B0"
 BLUE="#96CDFB"
-MAGENTA="#DDB6F2"
-CYAN="#B5E8E0"
+MAUVE="#DDB6F2"
+TEAL="#B5E8E0"
 WHITE="#D9E0EE"
 
 TOTD=$(fortune -n 90 -s | head -n 1)
 
 ## Exec	-----------------
 i3lock \
---color="${BG}D9"			\
+--color=${BG}      \
 \
 --insidever-color=${GREEN}	\
 --insidewrong-color=${RED}	\
---inside-color="${BG}00"	\
+--inside-color=${BG}	\
 \
 --ringver-color=${GREEN}	\
---ringwrong-color=${RED}	\
---ring-color=${CYAN}		\
+--ringwrong-color=${MAUVE}	\
+--ring-color=${TEAL}		\
 \
 --line-color=${BG}			\
 --separator-color=${BG}		\
 \
---keyhl-color=${YELLOW}		\
+--keyhl-color=${MAUVE}		\
 --bshl-color=${RED}			\
 \
 --verif-color=${BG}			\
@@ -52,7 +47,7 @@ i3lock \
 --time-size=34													\
 --date-size=18													\
 --greeter-text="${TOTD}"			\
---greeter-color=${FG}				\
+--greeter-color=${BLUE}				\
 --verif-text="verifying..."			\
 --wrong-text="error!"				\
 --noinput-text="Empty"				\
@@ -61,8 +56,8 @@ i3lock \
 --radius 140				\
 --ring-width 8.0			\
 --screen 1					\
+--blur 5                    \
 --clock						\
 --indicator					\
---time-str="%I:%M:%S %p"		\
---date-str="%A, %b %d, %G"
-#--blur 5
+--time-str="%I:%M %p"		\
+--date-str="%A, %b %d, %G"  \
