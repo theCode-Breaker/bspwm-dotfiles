@@ -5,4 +5,4 @@ cd bspwm-dotfiles
 cp -R .config/* ~/.config/
 chmod -R +x ~/.config/bspwm
 chmod -R +x scripts
-cp -R scripts/* /usr/local/bin
+sudo cp -R scripts/* /usr/local/bin
