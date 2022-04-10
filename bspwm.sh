@@ -1,5 +1,5 @@
 #!/bin/bash
-paru -S alacritty bspwm sxhkd feh polybar xorg-xsetroot xorg-xbacklight light picom dunst rofi flameshot xfce4-power-manager ksuperkey nerd-fonts-jetbrains-mono pamixer polkit-gnome i3lock-color nvim fm6000 fortune-mod network-manager-applet zsh zsh-autosuggestions zsh-syntax-highlighting oh-my-zsh-git catppuccin-gtk-theme papirus-icon-theme --needed --noconfirm
+paru -S alacritty git bspwm sxhkd feh polybar xorg-xsetroot xorg-xbacklight light picom dunst rofi flameshot xfce4-power-manager ksuperkey nerd-fonts-jetbrains-mono pamixer polkit-gnome i3lock-color nvim fm6000 fortune-mod network-manager-applet zsh zsh-autosuggestions zsh-syntax-highlighting oh-my-zsh-git catppuccin-gtk-theme papirus-icon-theme --needed --noconfirm
 git clone https://github.com/theCode-Breaker/bspwm-dotfiles.git
 cd bspwm-dotfiles
 cp -R .config/* ~/.config/
