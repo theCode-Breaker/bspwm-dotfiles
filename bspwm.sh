@@ -4,5 +4,7 @@ git clone https://github.com/theCode-Breaker/bspwm-dotfiles.git
 cd bspwm-dotfiles
 cp -R .config/* ~/.config/
 chmod -R +x ~/.config/bspwm
+cp .zshrc ~
+cp .zshrc-personal ~
 chmod -R +x scripts
 sudo cp -R scripts/* /usr/local/bin
