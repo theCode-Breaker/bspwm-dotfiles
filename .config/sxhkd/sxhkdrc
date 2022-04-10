@@ -8,15 +8,7 @@ super + Escape
 
 # Launch Terminal
 super + Return
-    terminal
-
-# Floating Alacritty Terminal
-super + shift + Return
-    terminal -f
-
-# Fullscreen Terminal
-super + shift + t
-    terminal -m
+    alacritty
 
 # j4 dmenu
 alt + F1
@@ -36,7 +28,7 @@ alt + {e,l}
 
 # Launch Applications
 super + shift + {f,w,r,g,c,d,s,v}
-    {thunar,vivaldi-stable,terminal -e ranger,geany,code,discord,spotify,virtualbox}
+    {thunar,vivaldi-stable,alacritty -e ranger,geany,code,discord,spotify,virtualbox}
 
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
