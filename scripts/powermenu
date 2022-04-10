@@ -1,15 +1,14 @@
 #!/bin/env bash
 
-source colors
-
-FONT="JetBrainsMono Nerd Font:size=12"
-
-[[ -z "$DISPLAY" ]] && exit 1
-choice=$(echo -e "0: Logout\n1: Reboot\n2: Shutdown\n3: Suspend & Lock" | dmenu -c -i -l 10 -nb "$bg" -nf "$fg" -sb "$altbg" -sf "$fg" -fn "$FONT" -p "Powermenu:" | cut -d ':' -f 1)
-[[ -z "$choice" ]] && exit 1
-case "$choice" in
-  0) pkill -KILL -u "$USER" &   ;;
-  1) reboot			;;
-  2) poweroff 			;;
-  3) systemctl suspend && lock  ;;
-esac
+choice=$(printf "Lock\nLogout\nSuspend\nReboot\nShutdown" | rofi -dmenu)
+if [[ $choice == "Lock" ]];then
+    lock
+elif [[ $choice == "Logout" ]];then
+    pkill -KILL -u "$USER"
+elif [[ $choice == "Suspend" ]];then
+    systemctl suspend
+elif [[ $choice == "Reboot" ]];then
+    systemctl reboot
+elif [[ $choice == "Shutdown" ]];then
+    systemctl poweroff
+fi
