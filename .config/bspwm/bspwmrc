@@ -67,4 +67,3 @@ xfce4-power-manager &
 # start compositor
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --experimental-backends --config $HOME/.config/bspwm/picom.conf &
-
