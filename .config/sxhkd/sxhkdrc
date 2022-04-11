@@ -24,7 +24,7 @@ ctrl + alt + l
 
 # Launch Applications
 super + shift + {f,w,r,g,c,d,s,v}
-    {thunar,vivaldi-stable,alacritty -e ranger,geany,code,discord,spotify,virtualbox}
+    {thunar,librewolf,alacritty -e ranger,geany,code,discord,spotify,virtualbox}
 
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
