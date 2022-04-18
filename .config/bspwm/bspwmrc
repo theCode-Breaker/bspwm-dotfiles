@@ -51,8 +51,8 @@ ksuperkey -e 'Super_L=Alt_L|F1' &
 ksuperkey -e 'Super_R=Alt_L|F1' &
 
 # polkit agent
-if [[ ! `pidof xfce-polkit` ]]; then
-    /usr/lib/xfce-polkit/xfce-polkit &
+if [[ ! `pidof polkit-gnome-authentication-agent-1` ]]; then
+    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 fi
 
 # Launch keybindings daemon
