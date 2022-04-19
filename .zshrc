@@ -34,7 +34,7 @@ ZSH_THEME_GIT_PROMPT_UNMERGED=" ═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED=" ✭"
 
 setopt prompt_subst
-PROMPT="%F{011}%~ %F{060}%n@%m%F{010}"$'\n'" ❯ %f"
+PROMPT="%F{078}%~"$'\n'" ❯ %f"
 RPROMPT='%F{060}${vcs_info_msg_0_}`git_prompt_status`'
 
 #ZSH_THEME=random
@@ -66,4 +66,4 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=60'
-neofetch
+fm6000 -r -n -c random
