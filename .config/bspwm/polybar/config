@@ -29,8 +29,6 @@ offset-y = 0.5%
 background = ${color.background}
 foreground = ${color.foreground}
 
-radius = 10
-
 line-size = 2
 line-color = ${color.blue}
 
