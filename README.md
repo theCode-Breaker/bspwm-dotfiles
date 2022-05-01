@@ -1,7 +1,7 @@
 # bspwm-dotfiles
 
 ### To install setup from scratch 
-Make sure to create a backup of your ~/.config . I would recommend that you go through the script before executing it :)
+I would recommend that you go through the script before executing it :)
 ``` 
 wget https://raw.githubusercontent.com/theCode-Breaker/bspwm-dotfiles/main/bspwm.sh 
 bash bspwm.sh
