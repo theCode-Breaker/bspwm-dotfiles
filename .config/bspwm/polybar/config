@@ -17,6 +17,7 @@ monitor-strict = false
 
 override-redirect = false
 
+radius = 8
 bottom = false
 fixed-center = true
 
