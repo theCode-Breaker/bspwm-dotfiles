@@ -79,13 +79,13 @@ adapter = ${system.adapter}
 poll-interval = 2
 time-format = %H:%M
 
-format-charging = <animation-charging><label-charging>
+format-charging = <animation-charging> <label-charging>
 format-charging-prefix = 
 
-format-discharging = <ramp-capacity><label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
 
 format-full = <label-full>
-format-full-prefix = "  "
+format-full-prefix = " "
 format-full-prefix-font = 2
 format-full-prefix-foreground = ${color.sky}
 
@@ -97,19 +97,19 @@ label-charging-foreground = ${color.sky}
 label-discharging-foreground = ${color.sky}
 label-full-foreground = ${color.sky}
 
-ramp-capacity-0 = "  "
-ramp-capacity-1 = "  "
-ramp-capacity-2 = "  "
-ramp-capacity-3 = "  "
-ramp-capacity-4 = "  "
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
 ramp-capacity-font = 2
 ramp-capacity-foreground = ${color.sky}
 
-animation-charging-0 = "  "
-animation-charging-1 = "  "
-animation-charging-2 = "  "
-animation-charging-3 = "  "
-animation-charging-4 = "  "
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
 animation-charging-font = 2
 animation-charging-foreground = ${color.sky}
 animation-charging-framerate = 750
@@ -223,14 +223,14 @@ interval = 30
 fixed-values = true
 
 format-mounted = <label-mounted>
-format-mounted-prefix = " "
+format-mounted-prefix = " "
 format-mounted-prefix-foreground = ${color.pink}
 
 format-unmounted = <label-unmounted>
-format-unmounted-prefix = " "
+format-unmounted-prefix = " "
 format-unmounted-prefix-foreground = ${color.pink}
 
-label-mounted = " %free%"
+label-mounted = "%free%"
 label-unmounted = " %mountpoint%: NA"
 label-mounted-foreground = ${color.pink}
 
@@ -242,10 +242,11 @@ type = internal/memory
 interval = 1
 
 format = <label>
-format-prefix = " "
+format-prefix = " "
+format-padding = 1
 format-prefix-foreground = ${color.yellow}
 format-foreground = ${color.yellow}
-label = " %mb_used%"
+label = "%mb_used%"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -347,3 +348,4 @@ content = 
 content-foreground = ${color.red}
 content-padding = 1
 click-left = powermenu
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
