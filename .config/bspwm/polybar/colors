@@ -1,5 +1,5 @@
 [color]
-background = #aa1A1826
+background = #aa1E1E2E
 foreground = #F5E0DC
 flamingo = #F2CDCD
 mauve = #DDB6F2
@@ -15,4 +15,4 @@ sky = #89DCEB
 lavender = #C9CBFF
 white = #D9E0EE
 black = #161320
-altblack = #1E1E2E
+altblack = #1A1826
