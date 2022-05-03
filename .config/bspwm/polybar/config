@@ -17,14 +17,14 @@ monitor-strict = false
 
 override-redirect = false
 
-radius = 8
+radius = 10
 bottom = false
 fixed-center = true
 
-width = 98%
+width = 96%
 height = 25
 
-offset-x = 1%
+offset-x = 2%
 offset-y = 0.5%
 
 background = ${color.background}
