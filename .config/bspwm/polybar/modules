@@ -315,8 +315,6 @@ label-empty = bspwm
 type = custom/text
 content = bspwm
 content-foreground = ${color.foreground}
-content-underline = ${color.foreground}
-content-overline = ${color.foreground}
 content-padding = 1
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
