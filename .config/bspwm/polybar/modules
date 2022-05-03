@@ -196,7 +196,7 @@ format-prefix = " "
 format-padding = 0
 format-prefix-foreground = ${color.peach}
 format-foreground = ${color.peach}
-label = "%{A1:alacritty -e gtop &:}%percentage%% %{A}"
+label = "%percentage%%"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -230,7 +230,7 @@ format-unmounted = <label-unmounted>
 format-unmounted-prefix = " "
 format-unmounted-prefix-foreground = ${color.pink}
 
-label-mounted = "%{A1:alacritty -e ncdu &:} %free%%{A}"
+label-mounted = " %free%"
 label-unmounted = " %mountpoint%: NA"
 label-mounted-foreground = ${color.pink}
 
@@ -245,7 +245,7 @@ format = <label>
 format-prefix = " "
 format-prefix-foreground = ${color.yellow}
 format-foreground = ${color.yellow}
-label = "%{A1:alacritty -e htop &:} %mb_used% %{A}"
+label = " %mb_used%"
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
