@@ -37,29 +37,29 @@ use-ui-max = false
 
 interval = 5
 
-format-volume = <ramp-volume><label-volume>
+format-volume = <ramp-volume> <label-volume>
 
 format-muted = <label-muted>
 format-muted-prefix = "  "
 format-muted-prefix-font = 1
 format-muted-prefix-foreground = ${color.mauve}
 
-label-volume = "%percentage%% "
+label-volume = "%percentage%%"
 label-muted = "Mute"
 
 label-volume-foreground = ${color.mauve}
 label-muted-foreground = ${color.mauve}
 
-ramp-volume-0 = "  "
-ramp-volume-1 = "  "
-ramp-volume-2 = "  "
-ramp-volume-3 = "  "
-ramp-volume-4 = "  "
-ramp-volume-5 = "  "
-ramp-volume-6 = "  "
-ramp-volume-7 = "  "
-ramp-volume-8 = "  "
-ramp-volume-9 = "  "
+ramp-volume-0 = " "
+ramp-volume-1 = " "
+ramp-volume-2 = " "
+ramp-volume-3 = " "
+ramp-volume-4 = " "
+ramp-volume-5 = " "
+ramp-volume-6 = " "
+ramp-volume-7 = " "
+ramp-volume-8 = " "
+ramp-volume-9 = " "
 ramp-volume-font = 1
 ramp-volume-foreground = ${color.mauve}
 
@@ -86,9 +86,9 @@ format-full-prefix = "  "
 format-full-prefix-font = 1
 format-full-prefix-foreground = ${color.sky}
 
-label-charging = "%percentage%% "
-label-discharging = "%percentage%% "
-label-full = "%percentage%% "
+label-charging = "%percentage%%"
+label-discharging = "%percentage%%"
+label-full = "%percentage%%"
 
 label-charging-foreground = ${color.sky}
 label-discharging-foreground = ${color.sky}
