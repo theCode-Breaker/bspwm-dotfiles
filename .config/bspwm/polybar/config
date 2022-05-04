@@ -42,13 +42,13 @@ module-margin = 0
 
 wm-restack = bspwm
 
-font-0 = "JetBrainsMono Nerd Font:size=12;3"
-font-1 = "JetBrainsMono Nerd Font:size=14;4"
-font-2 = "JetBrainsMono Nerd Font Mono:style=Bold:size=13;3"
+font-0 = "JetBrainsMono Nerd Font:size=11;3"
+font-1 = "JetBrainsMono Nerd Font:size=13;3"
+font-2 = "JetBrainsMono Nerd Font:style=Bold:size=13;3"
 
 # Default
 modules-left= launcher sep cpu memory filesystem sep installed-pkgs
-modules-center = my-text-label sep bspwm sep mod 
+modules-center = my-text-label sep bspwm
 modules-right = battery volume brightness sep time powermenu
 
 spacing = 0

@@ -134,7 +134,7 @@ ws-icon-5= VI;
 ws-icon-6= VII;漣  
 ws-icon-default =   
 
-format = <label-state>
+format = <label-state> <label-mode>
 format-font = 1
 
 label-monitor = %name%
@@ -163,16 +163,6 @@ label-separator = "•"
 label-separator-padding = 0
 label-separator-foreground = ${color.foreground} 
 
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[module/mod]
-type = internal/bspwm
-
-format = <label-mode>
-format-foreground = ${color.flamingo}
-format-padding = 1
-format-font = 1
-
 label-monocle = "[M]"
 label-tiled = "[]="
 
@@ -183,7 +173,6 @@ label-fullscreen = ", F"
 label-locked = " | L"
 label-sticky = " | S"
 label-private = " | Private"
-
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [module/cpu]
