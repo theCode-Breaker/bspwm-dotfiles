@@ -159,7 +159,7 @@ label-empty-foreground = ${color.foreground}
 label-empty-padding = 1
 
 ; Separator in between workspaces
-label-separator = "∙"
+label-separator = "•"
 label-separator-padding = 0
 label-separator-foreground = ${color.foreground} 
 
@@ -343,6 +343,7 @@ content-padding = 1
 [module/powermenu]
 type = custom/text
 content = 
+content-font= 1
 content-foreground = ${color.red}
 content-padding = 1
 click-left = powermenu
