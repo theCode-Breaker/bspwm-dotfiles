@@ -6,14 +6,7 @@ feh --no-fehbg --randomize --bg-scale $HOME/.config/bspwm/backgrounds/*
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/bspwm/polybar/launch.sh
 
-workspaces() {
-	name=1
-	for monitor in `bspc query -M`; do
-		bspc monitor ${monitor} -n "$name" -d '' '' '' '' '' '' '漣'
-		let name++
-	done
-}
-workspaces
+bspc monitor -d 1 2 3 4 5 6
 
 bspc config border_width         2
 bspc config window_gap           5
@@ -24,9 +17,9 @@ bspc config normal_border_color "#575268"
 bspc config active_border_color "#F5E0DC"
 
 bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-bspc config paddingless_monocle true
-bspc config single_monocle false
+bspc paddingless_monocle         true
+bspc config gapless_monocle      false
+bspc config single_monocle       false
 bspc config focus_follows_pointer true
 
 # fix pointer
