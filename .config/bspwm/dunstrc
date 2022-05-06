@@ -139,7 +139,6 @@ class = Dunst
 # Align icons left/right/off
 icon_position = left
 max_icon_size = 48
-
 frame_width = 0
 
 [shortcuts]
@@ -166,20 +165,21 @@ context = ctrl+shift+period
 [urgency_low]
 # IMPORTANT: colors have to be defined in quotation marks.
 # Otherwise the "#" and following would be interpreted as a comment.
-foreground = "#D9E0EE"
 background = "#1E1E2E"
+foreground = "#D9E0EE"
 timeout = 5
 
 [urgency_normal]
-foreground = "#D9E0EE"
 background = "#1E1E2E"
+foreground = "#D9E0EE"
 timeout = 5
 
 [urgency_critical]
-frame_color = "#F8BD96"
-foreground = "#D9E0EE"
 background = "#1E1E2E"
+foreground = "#D9E0EE"
+frame_color = "#F8BD96"
 timeout = 5
+
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
