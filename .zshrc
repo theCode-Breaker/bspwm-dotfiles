@@ -34,7 +34,7 @@ ZSH_THEME_GIT_PROMPT_UNMERGED=" ═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED=" ✭"
 
 setopt prompt_subst
-PROMPT="%F{078}%~"$'\n'" ❯ %f"
+PROMPT="%F{011}%~ %F{060}%n@%m%F{010}"$'\n'" ❯ %f"
 RPROMPT='%F{060}${vcs_info_msg_0_}`git_prompt_status`'
 
 #ZSH_THEME=random
@@ -54,13 +54,7 @@ HIST_STAMPS="dd/mm/yyyy"
 compinit
 _comp_options+=(globdots) # lets you tab complete hidden files by default
 
-plugins=(
-	git
-	npm
-	zsh-autosuggestions
-	vi-mode
-	zsh-syntax-highlighting
-	)
+plugins=(git npm zsh-autosuggestions vi-mode zsh-syntax-highlighting)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 [[ -f ~/.zshrc-personal ]] && . ~/.zshrc-personal
