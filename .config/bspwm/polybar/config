@@ -1,9 +1,4 @@
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
 [global/wm]
-margin-bottom = 0
-margin-top = 0
-
 include-file = ~/.config/bspwm/polybar/colors
 include-file = ~/.config/bspwm/polybar/modules
 include-file = ~/.config/bspwm/polybar/system
@@ -11,73 +6,21 @@ include-file = ~/.config/bspwm/polybar/system
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 [bar/bar]
-monitor =
-monitor-fallback =
-monitor-strict = false
-
-override-redirect = false
-
-radius = 10
+wm-restack = bspwm
 bottom = false
 fixed-center = true
-
-width = 96%
-height = 25
-
-offset-x = 2%
-offset-y = 0.5%
-
+enable-ipc = true
 background = ${color.background}
 foreground = ${color.foreground}
-
+font-0 = "JetBrainsMono Nerd Font:size=10.5;3"
+font-1 = "JetBrainsMono Nerd Font:size=14;3"
+modules-left= launcher cpu memory filesystem installed-pkgs
+modules-center = my-text-label bspwm
+modules-right = battery volume brightness time powermenu
+width = 96%
+height = 38
 line-size = 2
-line-color = ${color.blue}
-
-border-size = 6
-border-color = ${color.background}
-
-padding = 0
-
-module-margin = 0
-
-wm-restack = bspwm
-
-font-0 = "JetBrainsMono Nerd Font:size=11;3"
-font-1 = "JetBrainsMono Nerd Font:size=13;3"
-font-2 = "JetBrainsMono Nerd Font:style=Bold:size=13;3"
-
-# Default
-modules-left= launcher sep cpu memory filesystem sep installed-pkgs
-modules-center = my-text-label sep bspwm
-modules-right = battery volume brightness sep time powermenu
-
-spacing = 0
-dim-value = 1.0
-
+offset-x = 2%
+offset-y = 0.5%
 tray-position = right
-tray-detached = false
-tray-maxsize = 16
-tray-offset-x = 0
-tray-offset-y = 0
-tray-padding = 0
-tray-scale = 1.0
-
-enable-ipc = true
-
-cursor-click = 
-cursor-scroll = 
-
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[settings]
-screenchange-reload = false
-
-compositing-background = source
-compositing-foreground = over
-compositing-overline = over
-compositing-underline = over
-compositing-border = over
-
-pseudo-transparency = false
-
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
