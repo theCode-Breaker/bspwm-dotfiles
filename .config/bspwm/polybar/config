@@ -13,7 +13,7 @@ enable-ipc = true
 background = ${color.background}
 foreground = ${color.foreground}
 font-0 = "JetBrainsMono Nerd Font:size=10.5;3"
-font-1 = "JetBrainsMono Nerd Font:size=14;3"
+font-1 = "JetBrainsMono Nerd Font:size=14;4"
 modules-left= launcher cpu memory filesystem installed-pkgs
 modules-center = my-text-label bspwm
 modules-right = battery volume brightness time powermenu
