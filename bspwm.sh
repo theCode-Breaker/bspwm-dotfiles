@@ -10,5 +10,5 @@ chmod -R +x ~/.config/bspwm
 cp .zshrc ~
 cp .zshrc-personal ~
 mkdir ~/.local/bin
-cp -R scripts/* ~/.local/bin
+cp -R .local/bin/* ~/.local/bin
 chmod -R +x ~/.local/bin
