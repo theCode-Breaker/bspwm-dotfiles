@@ -1,7 +1,3 @@
-#
-# wm independent hotkeys
-#
-
 # reloads sxhkd configuration:
 super + Escape
     pkill -USR1 -x sxhkd
@@ -16,11 +12,11 @@ alt + F1
 	
 # Launch Menus
 super + {d,w,x}
-    {rofi -show run,rofi -show window,powermenu}
+    {rofi -show run,rofi -show window,$HOME/.local/bin/powermenu}
 
 # Lock Screen
 ctrl + alt + l
-    lock
+    $HOME/.local/bin/lock
 
 # Launch Applications
 super + shift + {f,w,r,g,c,d,s,v}
@@ -28,11 +24,11 @@ super + shift + {f,w,r,g,c,d,s,v}
 
 # Volume controls
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-    volume{ --up, --down, --toggle}
+    $HOME/.local/bin/volume{ --up, --down, --toggle}
 
 # Brightness controls
 XF86MonBrightness{Up,Down}
-    brightness{ --up, --down}
+    $HOME/.local/bin/brightness{ --up, --down}
 
 # screenshot
 Print
