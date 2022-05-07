@@ -160,4 +160,4 @@ content = 
 content-font = 2
 content-padding = 1
 content-foreground = ${color.red}
-click-left = powermenu
+click-left = $HOME/.local/bin/powermenu
