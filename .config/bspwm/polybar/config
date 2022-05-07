@@ -1,7 +1,7 @@
 [global/wm]
-include-file = ~/.config/bspwm/polybar/colors
-include-file = ~/.config/bspwm/polybar/modules
-include-file = ~/.config/bspwm/polybar/system
+include-file = $HOME/.config/bspwm/polybar/colors
+include-file = $HOME/.config/bspwm/polybar/modules
+include-file = $HOME/.config/bspwm/polybar/system
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -12,13 +12,16 @@ fixed-center = true
 enable-ipc = true
 background = ${color.background}
 foreground = ${color.foreground}
+radius = 12
 font-0 = "JetBrainsMono Nerd Font:size=10.5;3"
 font-1 = "JetBrainsMono Nerd Font:size=14;4"
 modules-left= launcher cpu memory filesystem installed-pkgs
 modules-center = my-text-label bspwm
 modules-right = battery volume brightness time powermenu
 width = 96%
-height = 38
+height = 30
+border-size = 4
+border-color = ${color.background}
 line-size = 2
 offset-x = 2%
 offset-y = 0.5%
