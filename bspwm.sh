@@ -9,5 +9,6 @@ cp -R .config/* ~/.config/
 chmod -R +x ~/.config/bspwm
 cp .zshrc ~
 cp .zshrc-personal ~
-chmod -R +x scripts
-sudo cp -R scripts/* /usr/local/bin
+mkdir ~/.local/bin
+cp -R scripts/* ~/.local/bin
+chmod -R +x ~/.local/bin
