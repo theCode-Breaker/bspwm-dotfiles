@@ -13,4 +13,4 @@ mkdir ~/.local/bin
 cp -R .local/bin/* ~/.local/bin
 chmod -R +x ~/.local/bin
 betterlockscreen -u ~/.config/bspwm/backgrounds/evening-sky.png
-sudo systemctl enable --now betterlockscreen@$USER.service
+sudo systemctl enable betterlockscreen@$USER.service
