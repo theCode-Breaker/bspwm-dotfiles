@@ -16,7 +16,7 @@ super + {d,w,x}
 
 # Lock Screen
 ctrl + alt + l
-    $HOME/.local/bin/lock
+    betterlockscreen --lock blur
 
 # Launch Applications
 super + shift + {f,w,r,g,c,d,s,v}
