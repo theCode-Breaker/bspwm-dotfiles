@@ -33,7 +33,7 @@ for i in ${floats[@]}; do
 ## Autostart
 
 # Kill if already running
-killall -9 picom sxhkd dunst nm-applet xfce4-power-manager ksuperkey
+killall -9 picom sxhkd dunst nm-applet ksuperkey
 
 # Launch notification daemon
 dunst -config $HOME/.config/bspwm/dunstrc &
@@ -53,13 +53,10 @@ sxhkd &
 # Launch NetworkManager applet
 nm-applet &
 
-# Enable power management
-xfce4-power-manager &
-
 # start compositor
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
 picom --experimental-backends --config $HOME/.config/bspwm/picom.conf &
 
-# Problems with Java applications
-#wmname LG3D
-#export _JAVA_AWT_WM_NONREPARENTING=1
+# Java applications
+wmname LG3D
+export _JAVA_AWT_WM_NONREPARENTING=1
